@@ -2,7 +2,9 @@
 
 namespace Classes;
 
-class CalculateSquare implements \Interfaces\CalculateInterface
+use Interfaces\CalculateInterface;
+
+class CalculateSquare implements CalculateInterface
 {
 
     public $a;
