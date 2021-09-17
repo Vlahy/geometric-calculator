@@ -16,11 +16,11 @@ class CalculateSquare implements CalculateInterface
 
     public function calculateArea()
     {
-        return pow($this->a,2);
+        echo 'Area of square is: ' . pow($this->a,2) . PHP_EOL;
     }
 
     public function calculateCircumference()
     {
-        return 4*$this->a;
+        echo 'Circumference of square is: ' . 4*$this->a . PHP_EOL;
     }
 }

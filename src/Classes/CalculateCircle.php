@@ -16,11 +16,11 @@ class CalculateCircle implements CalculateInterface
 
     public function calculateArea()
     {
-        return number_format(pow($this->r,2)*M_PI,2);
+        echo 'Area of circle is: ' . number_format(pow($this->r,2)*M_PI,2) . PHP_EOL;
     }
 
     public function calculateCircumference()
     {
-        return number_format(2*$this->r*M_PI,2);
+        echo 'Circumference of circle is: ' . number_format(2*$this->r*M_PI,2) . PHP_EOL;
     }
 }

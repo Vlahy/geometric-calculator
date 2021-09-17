@@ -18,12 +18,12 @@ class CalculateRectangle implements CalculateInterface
 
     public function calculateArea()
     {
-        return $this->a*$this->b;
+        echo 'Area of rectangle is: ' . $this->a*$this->b . PHP_EOL;
     }
 
     public function calculateCircumference()
     {
-        return 2*$this->a+2*$this->b;
+        echo 'Circumference of rectangle is: ' . (2*$this->a+2*$this->b) . PHP_EOL;
     }
 
 }
