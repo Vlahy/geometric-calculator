@@ -1,26 +1,27 @@
 <?php
 /** PSR-4 autoloader */
 
-use Classes\CalculateCircle;
-use Classes\CalculateRectangle;
-use Classes\CalculateSquare;
-use Classes\CalculateTriangle;
+
+use Classes\ShowResults;
 
 require __DIR__ . '/autoloader.php';
 
-$rectangle = new CalculateRectangle(7, 4);
-echo '------------------------------------' . PHP_EOL . 'Area of rectangle is: ' . $rectangle->calculateArea() . PHP_EOL;
-echo 'Circumference of rectangle is: ' . $rectangle->calculateCircumference() . PHP_EOL;
+$showResult = new ShowResults();
+$result=$showResult->getGeoType('rectangle');
+$showResult->showResults($result,$result);
 
-$square = new CalculateSquare(6);
-echo '------------------------------------' . PHP_EOL . 'Area of square is: ' . $square->calculateArea() . PHP_EOL;
-echo 'Circumference of square is: ' . $square->calculateCircumference() . PHP_EOL;
+echo PHP_EOL;
 
-$circle = new CalculateCircle(7);
-echo '------------------------------------' . PHP_EOL . 'Area of circle is: ' . $circle->calculateArea() . PHP_EOL;
-echo 'Circumference of circle is: ' . $circle->calculateCircumference() . PHP_EOL;
+$result=$showResult->getGeoType('square');
+$showResult->showResults($result,$result);
 
-$triangle = new CalculateTriangle(4);
-echo '------------------------------------' . PHP_EOL . 'Area of triangle is: ' . $triangle->calculateArea() . PHP_EOL;
-echo 'Circumference of triangle is: ' . $triangle->calculateCircumference() . PHP_EOL .'------------------------------------';
+echo PHP_EOL;
+
+$result=$showResult->getGeoType('triangle');
+$showResult->showResults($result,$result);
+
+echo PHP_EOL;
+
+$result=$showResult->getGeoType('circle');
+$showResult->showResults($result,$result);
 
