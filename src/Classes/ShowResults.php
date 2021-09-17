@@ -7,10 +7,10 @@ use Interfaces\CalculateInterface;
 class ShowResults
 {
 
-    public function showResults(CalculateInterface $showArea, CalculateInterface $showCircumference)
+    public function showResult(CalculateInterface $obj)
     {
-        $showArea->calculateArea();
-        $showCircumference->calculateCircumference();
+        $obj->calculateArea();
+        $obj->calculateCircumference();
     }
 
     public function getGeoType($type)
