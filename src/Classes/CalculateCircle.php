@@ -7,7 +7,7 @@ use Interfaces\CalculateInterface;
 class CalculateCircle implements CalculateInterface
 {
 
-    public $r;
+    protected $r;
 
     public function __construct($r)
     {

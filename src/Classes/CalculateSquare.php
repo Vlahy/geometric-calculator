@@ -7,7 +7,7 @@ use Interfaces\CalculateInterface;
 class CalculateSquare implements CalculateInterface
 {
 
-    public $a;
+    protected $a;
 
     public function __construct($a)
     {

@@ -7,8 +7,8 @@ use Interfaces\CalculateInterface;
 class CalculateRectangle implements CalculateInterface
 {
 
-    public $a;
-    public $b;
+    protected $a;
+    protected $b;
 
     public function __construct($a,$b)
     {

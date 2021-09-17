@@ -7,7 +7,7 @@ use Interfaces\CalculateInterface;
 class CalculateTriangle implements CalculateInterface
 {
 
-    public $a;
+    protected $a;
 
     public function __construct($a)
     {
